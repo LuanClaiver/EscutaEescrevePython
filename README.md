@@ -1,1 +1,2 @@
-# EscutaEescrevePython
+Codigo em Python que escuta o que foi dito apartir de um dispositivo de entrada de voz e escreve em seguida na tela.
+Apenas em Ingles...
