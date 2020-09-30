@@ -2,7 +2,6 @@
 
 import speech_recognition as sr # Importando o Speech Recognition
 
- 
 def main(): # Classe principal
  
     r = sr.Recognizer() # Definindo o Recognizer
@@ -16,25 +15,19 @@ def main(): # Classe principal
  
         print("Escrevendo agora... ") # Imprime texto para saber que esta escrevendo o que foi dito
  
- 
         # Reconhecer fala usando o google, aqui ele reconhece o que você falou e escreve na tela
- 
         try:
             print("Voce falou: \n" + r.recognize_google(audio))  # Reconhecendo o discurso usando o Google Speech
             print("Escrito com sucesso! \n ") # Mensagem de Feedback para saber se funcionou
- 
- 
+
         except Exception as e:
             print("Error :  " + str(e)) # Caso dê erro
- 
- 
- 
- 
+
         # Escreve audio
  
         with open("recorded.wav", "wb") as f:  # Aqui vamos gravar o áudio
             f.write(audio.get_wav_data())
  
- 
 #if _name_ == "_main_":
 main()
+
